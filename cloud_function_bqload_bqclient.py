@@ -4,8 +4,8 @@ def trigger_bqclientload(event, context):
     
     file_name = event['name']
     bucket_name = event['bucket']
-    table_id = f"persuasive-pipe-384604.cloudfunction.{event['name'].split('.')[0]}"
-    meta_table = 'persuasive-pipe-384604.cloudfunction.data_loading_metadata'
+    table_id = f"xxxxxxx-yyyyy-384604.cloudfunction.{event['name'].split('.')[0]}"
+    meta_table = 'xxxxxxx-yyyyy-384604.cloudfunction.data_loading_metadata'
     
     
     
