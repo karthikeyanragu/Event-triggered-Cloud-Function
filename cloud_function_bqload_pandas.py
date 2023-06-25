@@ -3,7 +3,7 @@ from pandas.io import gbq
 from google.cloud import bigquery
 
 
-def hello_gcs(event, context):
+def bqload_pandas(event, context):
     """Triggered by a change to a Cloud Storage bucket.
     Args:
          event (dict): Event payload.
