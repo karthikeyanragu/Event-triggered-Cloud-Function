@@ -9,7 +9,7 @@ try:
     
     region = 'us-central1'
     main_python_file_uri = os.environ.get("main_python_file_uri")
-    project_id = 'persuasive-pipe-384604'
+    project_id = 'xxxxxxx-yyyyy-384604'
     cluster_name = 'spark-demo'
 # Create the dataproc job client.
     job_client = dataproc_v1.JobControllerClient(
@@ -43,7 +43,7 @@ try:
     client = bigquery.Client()
     job_config = bigquery.LoadJobConfig(autodetect = True, create_disposition='CREATE_IF_NEEDED',
                                         write_disposition='WRITE_APPEND')
-    meta_table = 'persuasive-pipe-384604.cloudfunction.data_loading_metadata'
+    meta_table = 'xxxxxxx-yyyyy-384604.cloudfunction.data_loading_metadata'
     insert_metadata = client.load_table_from_json(meta_dict,meta_table, num_retries = 2,job_config=job_config)
     insert_metadata.result()
     
