@@ -36,7 +36,7 @@ df  = spark.read.option("header" , True).schema(schema).csv(f'gs://{bucket_name}
 df1= df.withColumn('insert_time',current_timestamp())
 
 df1.write.format('bigquery') \
-    .option('table', 'persuasive-pipe-384604.bigdata.ev_pop') \
-    .option('temporaryGcsBucket', 'my_bigdata_bucket007') \
+    .option('table', 'xxxxxxx-yyyyy-384604.bigdata.ev_pop') \
+    .option('temporaryGcsBucket', 'xxxxxx_bucket007') \
     .mode('overwrite') \
     .save()
