@@ -1,5 +1,5 @@
 # Event-triggered-Cloud-Function
-This repository is about how to set up Cloud function responding to storage event happening in GCS bucket to load data into Bigquery.Here your source of data is CSV file uploaded in GCS bucket. Any event happening under the GCS bucket is monitored using Cloud Function, in response to which desired action can be taken. 
+This repository is about how to set up Cloud function responding to storage event happening in GCS bucket to load data into Bigquery.Here your source of data is CSV file uploaded in GCS bucket. Any event happening under the GCS bucket is monitored using Cloud Function, in response to which desired action can be taken. Bigquery being the target, we can connect BI tools to generate visualizations, charts, etc.
 
 # Cloud Function
 
