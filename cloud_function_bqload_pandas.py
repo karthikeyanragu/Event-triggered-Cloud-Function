@@ -27,14 +27,14 @@ def hello_gcs(event, context):
 
     df_metadata = pd.DataFrame.from_records(metadata)
     df_metadata.to_gbq('cloudfunction.data_loading_metadata',
-                           project_id = 'persuasive-pipe-384604',
+                           project_id = 'xxxxxxx-yyyyy-384604',
                            if_exists = 'append',
                            location = 'us')
 
     df_data = pd.read_csv('gs://' + event['bucket'] + '/' + event['name'])
 
     df_data.to_gbq('cloudfunction.' + table_name,
-                           project_id = 'persuasive-pipe-384604',
+                           project_id = 'xxxxxxx-yyyyy-384604',
                            if_exists = 'append',
                            location = 'us')
 
